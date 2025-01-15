@@ -1,0 +1,13 @@
+#workinfo-container {
+    display: grid;
+    grid-template-columns: 0.75fr 2.25fr;
+    gap: 30px;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+#generate-button {
+    grid-column: span 2;
+}

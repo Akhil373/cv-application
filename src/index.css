@@ -1,0 +1,106 @@
+body, html {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#loading {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+@keyframes spin{
+
+  50%{
+    scale: 1.25;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+.finalCV-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 100px 10px;
+}
+
+#final-title {
+  align-self: flex-start;
+}
+
+#final-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+#final-data {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+#return-button {
+  background-color: transparent;
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for Markdown rendered elements */
+#final-data h1, #final-data h2, #final-data h3 {
+  color: white;
+  margin-top: 20px;
+}
+
+#final-data p {
+  color: white;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+#final-data ul, #final-data ol {
+  color: white;
+  margin-left: 20px;
+}
+
+#final-data code {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+#final-data blockquote {
+  border-left: 4px solid #f0f0f0;
+  padding-left: 10px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+#final-data a {
+  color: #66f;
+  text-decoration: underline;
+}

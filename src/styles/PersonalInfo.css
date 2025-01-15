@@ -1,0 +1,32 @@
+#userinfo-form-container {
+    flex: 2;
+    padding: 50px;
+}
+
+.userInfo-inner-container {
+    display: grid;
+    grid-template-columns: 0.75fr 2.25fr;
+    gap: 30px;
+}
+
+#details-title {
+    grid-column: span 2;
+    font-size: 1.24rem;
+    font-weight: 600;
+}
+
+.userinfo-input {
+    border-radius: 8px;
+    padding: 3px 10px;
+    height: clamp(10px, 80%, 20px);
+    background-color: whitesmoke;
+    max-width: 100%;
+}
+
+.info-button {
+    margin-top: 25px;
+    padding: 0.5rem 1rem;
+    min-width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

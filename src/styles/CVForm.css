@@ -1,0 +1,39 @@
+.cv-form-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 0 50px;
+}
+
+#cv-form-title-container {
+    flex: 1.25;
+    padding: 20px;
+    z-index: 0;
+}
+
+#cv-form-title {
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#cv-form-title::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, red, blue);
+    width: 99%;
+    height: calc(100% + 10px);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    transform: scale(1) skew(0deg);
+}
+
+#cv-form-title:hover {
+    animation: spin 3s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    transform: scale(1.15) skew(5deg);
+}
